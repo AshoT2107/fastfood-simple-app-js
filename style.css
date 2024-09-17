@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  gap: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-rows: 100px;
+  overflow: auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 10px;
+  border: 2px solid #e4e4e4;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.product > * {
+  pointer-events: none;
+}
+
+.product .price {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.product span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.orders {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order__list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.orders button {
+  background-color: #26a45f;
+  border: 0;
+  padding: 10px;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.order .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order .buttons .button {
+  padding: 5px;
+  display: block;
+}
+
+.order .price {
+  margin-left: auto;
+}
+
+.order__sum {
+  margin-top: auto;
+  margin-bottom: 20px;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btns .remove {
+  background-color: red;
+  color: #fff;
+}
+
+.btns .orderbtn {
+  flex: 1;
+  color: #fff;
+}
